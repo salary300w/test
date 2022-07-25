@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh '''echo "this is master"
+                sh '''chmod a+x echo.sh
+                      ./echo.sh
                         '''
             }
         }
